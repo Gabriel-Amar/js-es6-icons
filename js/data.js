@@ -112,3 +112,28 @@ const icons =[
 		color: 'blue'
 	}
 ];
+
+let container = document.querySelector(".container")
+
+let div = "";
+
+icons.forEach((element) =>{
+	const tipo = document.getElementById("tipo");
+	if(tipo.value === "1"){
+		div += `
+		<div class="col-2">
+		<div class="square"><i class="fa-solid fa-cat"></i><span>Cat</span></div>
+		</div>
+		`
+	}
+})
+container.innerHTML += div
+
+
+
+/*
+		<div class="col-2">
+			<div class="square"><i class="fa-solid fa-cat"></i><span>Cat</span></div>
+		</div>
+
+*/
