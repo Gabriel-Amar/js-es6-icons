@@ -1,0 +1,24 @@
+.testo{
+    margin-left: 20px;
+    font-size: 40px;
+    color: #68c7e6;
+}
+.navigation{
+    background-color:#68c7e6;
+    color: white;
+}
+.form-select{
+    width: 150px;
+    margin: auto;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 1px 15px #aaaaaa;
+    border-radius: 20%;
+}
