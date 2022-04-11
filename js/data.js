@@ -113,27 +113,44 @@ const icons =[
 	}
 ];
 
-let container = document.querySelector(".container")
+let container = document.querySelector(".row")
+stampa(icons)
 
-let div = "";
-
-icons.forEach((element) =>{
-	const tipo = document.getElementById("tipo");
-	if(tipo.value === "1"){
-		div += `
-		<div class="col-2">
-		<div class="square"><i class="fa-solid fa-cat"></i><span>Cat</span></div>
-		</div>
-		`
-	}
-})
-container.innerHTML += div
-
+function stampa(array){
+	let div = "";
+	array.forEach((element) =>{
+			div += 
+			`
+			<div class="col-2">
+				<div class="square"><i style= "color:${element.color}" class="${element.prefix}solid fa-${element.name}"></i><span>${element.name}</span></div>
+			</div>
+			`
+	})
+	container.innerHTML += div
+}
 
 
-/*
-		<div class="col-2">
-			<div class="square"><i class="fa-solid fa-cat"></i><span>Cat</span></div>
-		</div>
+let select = document.querySelector(".form-select");
 
-*/
+select.addEventListener("change", function(){
+
+	let tipo = select.value;
+	if(tipo === "1"){
+		container.innerHTML = ""
+		stampa(icons.filter((icone) => icone.type === "animal"));
+	} else if(tipo === "2"){
+		container.innerHTML = ""
+		stampa(icons.filter((icone)=> icone.type === "vegetable"));
+	}else if(tipo === "3"){
+		container.innerHTML = ""
+		stampa(icons.filter((icone)=> icone.type === "user")); 
+	}else if(tipo === "0"){
+		container.innerHTML = ""
+		stampa(icons);
+}})
+
+
+
+
+
+
