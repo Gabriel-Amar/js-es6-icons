@@ -136,16 +136,16 @@ select.addEventListener("change", function(){
 
 	let tipo = select.value;
 	if(tipo === "1"){
-		container.innerHTML = ""
+		container.innerHTML = "";
 		stampa(icons.filter((icone) => icone.type === "animal"));
 	} else if(tipo === "2"){
-		container.innerHTML = ""
+		container.innerHTML = "";
 		stampa(icons.filter((icone)=> icone.type === "vegetable"));
 	}else if(tipo === "3"){
-		container.innerHTML = ""
+		container.innerHTML = "";
 		stampa(icons.filter((icone)=> icone.type === "user")); 
 	}else if(tipo === "0"){
-		container.innerHTML = ""
+		container.innerHTML = "";
 		stampa(icons);
 }})
 
