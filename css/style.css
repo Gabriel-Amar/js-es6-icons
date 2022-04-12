@@ -20,11 +20,11 @@ span{
     width: 12%;
 }
 .square {
-    width: 170px;
-    height: 100px;
+    width: 208px;
+    height: 115px;
     margin: 0 auto;
     text-align: center;
-    line-height: 100px;
+    line-height: 115px;
     font-size: 25px;
     color: rgb(0, 0, 0);
     box-shadow: 2px 1px 15px #aaaaaa;
